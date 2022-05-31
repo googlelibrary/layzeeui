@@ -1,0 +1,100 @@
+/* Button Download */
+.downloadInfo{max-width:500px;background-color:#fefefe; box-shadow:0 10px 8px -8px rgb(0 0 0 / 12%); border:1px solid #eceff1;border-radius:5px; padding:15px;margin-top:20px;margin-bottom:20px; display:flex;align-items:center; line-height:1.8em;font-size:14px}
+.downloadInfo a, .downloadInfo .fileType{flex-shrink:0;display:flex;align-items:center;justify-content:center; width:50px;height:50px; padding:10px; background:#f1f1f0;border-radius:10px}
+.downloadInfo a{background-color:#0000FF;color:#fefefe; margin:0;padding:10px 12px;border-radius:3px; width:auto;height:auto; line-height:20px;font-size:13px}
+.downloadInfo a:after{content:attr(aria-label)}
+.downloadInfo .fileType:before{content:attr(data-text)}
+.downloadInfo .fileName{flex-grow:1; width:calc(100% - 150px);padding:0 15px}
+.downloadInfo .fileName > *{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.downloadInfo .fileSize{line-height:1.4em;font-size:12px;opacity:.8}
+.icon.download{background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fefefe' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'><path d='M3 17v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3'/><polyline points='8 12 12 16 16 12'/><line x1='12' x2='12' y1='2' y2='16'/></svg>")}
+.icon{flex-shrink:0; display:inline-block;margin-right:12px; width:18px;height:18px; background-size:cover;background-repeat:no-repeat;background-position:center}
+.kailyTargetLink{display:none} 
+@media screen and (max-width:480px){
+.downloadInfo{padding:12px}
+.downloadInfo a{width:50px;height:50px;border-radius:10px}
+.downloadInfo a:after{display:none}
+.downloadInfo a .icon{margin:0}} 
+/* CSS darkmode adjust the class if different or delete this section */
+.drK .downloadInfo{color:#000000}
+.drk .downloadInfo .fileType{background-color:#212121;color:#FFFFFF}
+.drK .downloadInfo .fileLink{color:#FFFFFF}
+
+/*Pricing Section by Kaily*/
+.kaily-pricing{position:relative;padding:50px 0;text-align:center}
+.kaily-pricing .container-pricing{display:grid;grid-template-columns:32% 32% 32%;grid-gap:30px;margin:30px auto 0}
+.drk .kailysec-pricing{padding:30px;margin:0 0 20px;position:relative;box-shadow:0 3px 20px 0 rgba(0,0,0,0.15);border-radius:5px;background:#fff;transition:all .2s ease-in-out;border-top:4px solid #fff}
+.kailysec-pricing .Price{font-size:50px;margin:15px 0;background:linear-gradient(to right, #630ad8,#630ad8);color:#fff;width:100px;height:100px;line-height:2;border-radius:100%}
+.kailysec-pricing{box-shadow:none;border:1px solid #ddd}
+.kailysec-pricing h3{color:#111;font-size:20px;font-weight:700}
+.drk .kailysec-pricing p{font-size:15px;color:#555}
+.kailysec-pricing .Price{font-size:25px;font-weight:700;line-height:4;display:inline-block}
+.kaily-pricing a.kailybutton{box-shadow:none;background:linear-gradient(to right, #630ad8,#630ad8)}
+.kailybutton{display:inline-flex;align-items:center;margin:15px 15px 15px 0;padding:10px 20px;outline:0;border:0;color:#fefefe;background-color:#630ad8;border-radius:3px;font-size:18px;line-height:22px;text-decoration:none}
+a.kailybutton:hover{transform:scale(1.1)}
+@media screen and (max-width:680px){.kaily-pricing .container-pricing{grid-template-columns:100%;display:block;margin:20px auto}}
+
+/* bookmark */
+.pop-area::-webkit-scrollbar{display:none}
+.pop-area{display:flex!important;width:100%;height:100%;position:fixed;top:0;left:0;background:rgb(0 0 0 / 51%);visibility:hidden;opacity:0;transition:all 0.25s ease-in-out;z-index:999999;overflow-y:scroll}
+.pop-area.open{opacity:1;visibility:visible}
+.pop-area .pop-html{background:#fff;padding-bottom:10px;display:block;margin:auto auto;width:calc(100% - 20px);max-width:500px;visibility:hidden;opacity:0;overflow:hidden;transition:all 0.5s ease-in-out;transform:scale(.5);border-radius:7px;box-shadow:0 9px 46px 8px rgba(0,0,0,.14),0 11px 15px -7px rgba(0,0,0,.12),0 24px 38px 3px rgba(0,0,0,.2)}
+.pop-area.open .pop-html{opacity:1;transform:scale(1);visibility:visible}
+.pop-area .head-pop:after{content:"Bookmark";color:#fefefe;font-weight:bold}
+.pop-area .head-pop{width:-webkit-fill-available;padding:12px 30px;overflow:hidden;background:#8034eb}
+.pop-area .close-btn{float:right;cursor:pointer;fill:#7e7e7e;color:#fefefe;font-weight:bold}
+.pop-area .body-content{padding:10px}
+.pop-area .text-center{display:grid;text-align:center;grid-gap:15px}
+.pop-area .text-center svg{margin:0 auto}
+.pop-area .btn.btn-outline-info{width:fit-content;margin:0 auto;text-decoration:none}
+.pop-area .table:hover{border-color:#8034eb}
+.pop-area .table{transition:all .3s;width:100%;border:1px solid rgba(155,155,155,0.15);border-radius:7px;margin:5px 0;padding:5px}
+.pop-area .table img{border-radius:4px;width:auto}
+.pop-area .table a:hover,.drK .pop-area .table a:hover{color:#8034eb}
+.pop-area .table a{text-decoration:none;color:#08102b}
+.pop-area .img-left{width:150px}
+.pop-area .item-left{padding-right:10px}
+.pop-area .btn-remove{cursor:pointer}
+.show-bookmark{font-size:11px;line-height:18px;padding:0 5px;border-radius:10px;background:#e6e6e6;color:var(--bodyC);position:absolute;top:-5px;right:0;z-index:2}
+.pop-area .counterStat{color:white;font-size:16px}
+.drK .pop-area.open .pop-html,.drK .pop-area .body-content,.drK .pop-area .table a{background-color:#1e1e1e;color:#fefefe}
+.iFxd .hartomy-bookmark-btn:hover::before{content:'add to bookmark';right:15px;display:block}
+.iFxd .hartomy-bookmark-btn:before{content:'';font-size:12px;color:#767676;width:150px;padding-left:30px;padding:5px 0 5px 30px;background-color:var(--bodyB);border-radius:5px;position:absolute;right:0;display:none}
+.iFxd .hartomy-bookmark-btn{position:relative;transition:var(--trans-4)}
+
+
+/* Toast Notification by Kaily */
+.tNtf span{position:fixed;left:24px;bottom:-70px;display:inline-flex;align-items:center;text-align:center;justify-content:center;margin-bottom:20px;z-index:99981;background:#323232;color:rgba(255,255,255,.8);font-size:14px;font-family:inherit;border-radius:3px;padding:13px 24px; box-shadow:0 5px 35px rgba(149,157,165,.3);opacity:0;transition:all .1s ease;animation:slideinwards 2s ease forwards;-webkit-animation:slideinwards 2s ease forwards}
+@media screen and (max-width:500px){.tNtf span{margin-bottom:20px;left:20px;right:20px;font-size:13px}}
+@keyframes slideinwards{0%{opacity:0}20%{opacity:1;bottom:0}50%{opacity:1;bottom:0}80%{opacity:1;bottom:0}100%{opacity:0;bottom:-70px;visibility:hidden}}
+@-webkit-keyframes slideinwards{0%{opacity:0}20%{opacity:1;bottom:0}50%{opacity:1;bottom:0}80%{opacity:1;bottom:0}100%{opacity:0;bottom:-70px;visibility:hidden}}
+.drK .tNtf span{box-shadow:0 10px 40px rgba(0,0,0,.2)} .drK .tNtf svg{stroke:#fefefe}
+
+/* Pop-Up Box (Style 2) by Kaily */
+.popSc{position:fixed;top:0;bottom:0;left:0;right:0;padding:20px;background:rgba(255, 255, 255, 0.1);z-index:99980;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);display:flex;justify-content:center;align-items:center}
+.popSc.hidden{display:none}
+.popSc .popBo{position:relative;background:rgba(255, 255, 255, 0.8);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);max-width:400px;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:30px;border-radius:20px;box-shadow:0 5px 25px rgb(0 0 0 / 20%)}
+.popSc .popBo svg{display:block;width:50px;height:50px;fill:none !important;stroke:#08102b;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+.popSc .popBo h2{margin:10px 0 15px 0;font-size:1.2rem;font-weight:800;color:#08102b}
+.popSc .popBo p{margin:0;line-height:1.7em;font-size:0.9rem;color:#08102b}
+.popSc .popBo .popBtn{display:inline-flex;justify-content:center;align-items:center;height:50px;width:50px;outline:none;border:none;background:#482dff;border-radius:50%;margin-top:20px;transition:all .2s ease;-webkit-transition:all .2s ease}
+.popSc .popBo .popBtn:hover{transform:scale(1.05);-webkit-transform:scale(1.05)}
+.popSc .popBo .popBtn svg{width:24px;height:24px;stroke:#fff;flex-shrink:0}
+.popSc .popBo .popBtn svg.r{animation:rotateIcn 1.5s infinite linear;-webkit-animation:rotateIcn 1.5s infinite linear}
+.popSc{animation:popupBlur .3s ease-in; -webkit-animation:popupBlur .3s}
+.popSc >*{animation:popupScale .3s ease-in; -webkit-animation:popupScale .3s}
+.drK .popSc{background:rgba(0, 0, 0, 0.1)}
+.drK .popSc .popBo{background:rgba(50, 50, 50, 0.8)}
+.drK .popSc .popBo svg{stroke:#fefefe}
+.drK .popSc .popBo p, .drK .popSc .popBo h2{color:#fefefe}
+@keyframes popupBlur {from{opacity:0}to{opacity:1}}
+@-webkit-keyframes popupBlur{from{opacity:0}to{opacity:1}}
+@keyframes popupScale{from{transform:scale(0);animation-timing-function:ease-in;opacity:0}to{transform:scale(1);opacity:1}}
+@-webkit-keyframes popupScale{from{-webkit-transform:scale(0);-webkit-animation-timing-function: ease-in;opacity:0}to{-webkit-transform:scale(1);opacity:1}}
+@keyframes rotateIcn{from{transform:rotate(0deg)} to{transform:rotate(359deg)}}
+@-webkit-keyframes rotateIcn{from{-webkit-transform:rotate(0deg)} to{-webkit-transform:rotate(359deg)}}
+
+/* Cookies Consent Notice by Kaily */
+.ckW{position:fixed;top:auto;left:40px;right:auto;bottom:-600px;z-index:10;display:none;padding:20px;background:rgba(255,255,255,.8);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-radius:15px;box-shadow:0 0 40px rgba(0,0,0,.1);animation:ckUpD 2.5s forwards;-webkit-animation:ckUpD 2.5s forwards;animation-delay:1s;-webkit-animation-delay:1s;max-width:400px} .ckW.v{display:block} .ckW.a{animation:ckDnD 2.5s backwards;-webkit-animation:ckDnD 2.5s backwards;animation-delay:.3s;-webkit-animation-delay:.3s} .ckH{margin-bottom:10px;font-size:1.1rem;font-weight:700;font-family:var(--fontBa)} .ckH::after{content:'';display:inline-block;vertical-align:middle;width:var(--widgetTa);margin:0 10px;border-bottom:1px solid var(--widgetTac);opacity:.5} .ckD{font-size:14px;line-height:1.4rem;font-family:var(--fontBa)} .ckF{margin-top:15px;display:flex;justify-content:center} .ckF >*{flex-grow:1;justify-content:center} .ckF >*:first-child{margin-right:10px;background:var(--linkB);color:#fffdfc} .ckF >*:last-child{flex:0 0 auto} .ckB{display:inline-flex;align-items:center;cursor:pointer;padding:10px 15px;outline:0;border:0;border-radius:var(--buttonR);line-height:20px;color:rgba(0,0,0,.8);background:#e9e9e9;font-size:14px;font-family:var(--fontB);white-space:nowrap;overflow:hidden} .ckB:hover{opacity:.8} .Rtl .ckW{left:auto;right:40px} .Rtl .ckF >*:first-child{margin-right:0} .Rtl .ckF >*:last-child{margin-right:10px} @media screen and (max-width:768px){.ckW{left:20px;right:20px;animation:ckUpM 2.5s forwards;-webkit-animation:ckUpM 2.5s forwards} .ckW.a{animation:ckDnM 2.5s backwards;animation-delay:.3s;-webkit-animation:ckDnM 2.5s backwards;-webkit-animation-delay:.3s} .Rtl .ckW{left:20px;right:20px}} @keyframes ckUpD{100%{bottom:40px}} @keyframes ckUpM {100%{bottom:20px}} @keyframes ckDnD{0%{bottom:40px}100%{bottom:-600px}} @keyframes ckDnM{0%{bottom:20px}100%{bottom:-600px}} @-webkit-keyframes ckUpD{100%{bottom:40px}} @-webkit-keyframes ckUpM {100%{bottom:20px}} @-webkit-keyframes ckDnD{0%{bottom:40px}100%{bottom:-600px}} @-webkit-keyframes ckDnM{0%{bottom:20px}100%{bottom:-600px}} .drK .ckW{background:rgba(55,55,55,.8)} .drK .ckF >*:first-child{background:var(--darkU)} .drK .ckF >*:last-child{background:var(--darkBa);color:rgba(255,255,255,.8)}
+
+/* Post Next or Prev */ .chpN{margin:4em 0 0;display:flex;justify-content:space-between;flex-wrap:wrap;position:relative;width:calc(100% + 20px);left:-10px;right:-10px; font-size:14px;font-family:var(--fontB);line-height:1.6em} .chpN >*{margin:0 10px;flex:0 0 calc(50% - 20px);display:inline-flex;flex-direction:column;color:inherit!important;cursor:default} .chpN >*::before{content:'Previous Chapter'} .chpN >*:not(:first-child)::before{content:'Next Chapter'} .chpN >*::after{content:attr(data-text);display:block; /*display:-webkit-box;*/-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden; opacity:.6; font-size:12px;font-family:var(--fontBa);line-height:1.5em;margin-top:4px;cursor:pointer} .chpN >*:hover::after{text-decoration:underline} .chpN >*:not(:first-child){align-items:flex-end; text-align:right} .chpN.n{justify-content:flex-end} .chpN.p{justify-content:flex-start}
